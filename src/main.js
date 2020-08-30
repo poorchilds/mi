@@ -4,11 +4,16 @@ import VueAxios from 'vue-axios'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+
+const mock = true
+if (mock) {
+  require('./mock/api.js')
+}
 // 导入环境变量的baseURL
-import env from './env'
+// import env from './env'
 // 根据环境变量获取不同的baseURL地址
-axios.defaults.baseURL = env.baseURL
-// axios.defaults.baseURL = '/api' // 使用反向代理的方式
+// axios.defaults.baseURL = env.baseURL
+axios.defaults.baseURL = '/api' // 使用反向代理的方式
 axios.defaults.timeout = 8000
 axios.interceptors.response.use(response => {
   const res = response.data
