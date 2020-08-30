@@ -1,9 +1,12 @@
 <template>
-  <div class=""></div>
+  <div class="footer">
+    footer
+  </div>
 </template>
 
 <script>
 export default {
+  name: 'navfooter',
   props: {},
   data() {
     return {}
@@ -15,3 +18,4 @@ export default {
 </script>
 
 <style scoped lang="less"></style>
+`

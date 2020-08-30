@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    app
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import storage from './storage'
 export default {
-  name: 'app'
+  name: 'app',
+  created() {
+    storage.clear('goodid', 'goods')
+  }
 }
 </script>
 

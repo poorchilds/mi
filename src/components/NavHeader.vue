@@ -1,9 +1,12 @@
 <template>
-  <div class=""></div>
+  <div class="navheader">
+    navheader
+  </div>
 </template>
 
 <script>
 export default {
+  name: 'navheader',
   props: {},
   data() {
     return {}

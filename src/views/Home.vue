@@ -1,14 +1,15 @@
 <template>
   <div class="home">
+    home
     <NavHeader></NavHeader>
+    <NavFooter></NavFooter>
     <router-view></router-view>
-    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import NavHeader from '../components/NavHeader'
-import Footer from '../components/Footer'
+import NavFooter from '../components/NavFooter'
 export default {
   name: 'home',
   props: {},
@@ -18,7 +19,7 @@ export default {
   methods: {},
   components: {
     NavHeader,
-    Footer
+    NavFooter
   },
   created() {}
 }
