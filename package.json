@@ -62,7 +62,8 @@
       "space-before-function-paren": [
         "error",
         "never"
-      ]
+      ],
+      "comma-dangle": 0
     }
   },
   "browserslist": [
